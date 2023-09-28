@@ -3,6 +3,7 @@
 Run the data server
 
 ```json
+npm install
 node server.js
 ```
 
