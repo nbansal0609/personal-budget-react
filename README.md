@@ -1,3 +1,17 @@
+# To Run the Project (Submitted By: NIKHIL BANSAL 801310666)
+
+Run the data server
+
+```json
+node server.js
+```
+
+Open a new terminal and run the react app
+
+```json
+npm start
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
