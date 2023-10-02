@@ -1,7 +1,7 @@
 // Budget API
 
 const express = require('express');
-// const cors = require('cors');
+const cors = require('cors');
 const app = express();
 const port = 4000;
 const fs = require('fs');
@@ -13,6 +13,11 @@ app.get('/hello', (req, res) => {
     res.send('Hello world!');
 });
 
+app.use(
+    cors({
+      origin: "http://localhost:3000",
+    })
+  );
 
 app.get('/budget', (req, res) => {
     fs.readFile('data.json', 'utf8', (err, data) => {
